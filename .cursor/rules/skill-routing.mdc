@@ -1,0 +1,28 @@
+---
+description: Routes business tasks to the right curated skill. Use for GTM, research, strategy, PRD, ICP, or lead generation work.
+alwaysApply: false
+---
+
+# Business skill routing
+
+Curated set only (~44 skills). Full list: [skills-manifest.json](../../skills-manifest.json).
+
+| User intent | Skill |
+|-------------|-------|
+| Find leads / prospect list | `lead-research-assistant` |
+| Industry overview | `analyze-industry` |
+| Company business deep-dive | `company-research` |
+| Company tech stack / engineering | `company-technical-research` |
+| ICP / ideal customer | `ideal-customer-profile` |
+| GTM plan / launch | `gtm-strategy`, `beachhead-segment`, `gtm-motions` |
+| Competitive sales deck | `competitive-battlecard`, `competitor-analysis` |
+| Positioning / messaging | `positioning-ideas`, `value-prop-statements`, `value-proposition` |
+| PRD / specs | `create-prd` |
+| Discovery / assumptions | `brainstorm-ideas-new`, `identify-assumptions-new`, `prioritize-assumptions` |
+| Strategy canvas | `lean-canvas`, `product-strategy` |
+| Pricing | `pricing-strategy`, `monetization-strategy` |
+| Metrics | `north-star-metric`, `metrics-dashboard`, `ab-test-analysis` |
+| User research | `interview-script`, `summarize-interview`, `user-personas` |
+| Map knowledge from docs/files | `graphify` |
+
+Optional skills (not pre-installed): run `scripts/install-optional-skill.ps1 -Name linkedin-content` etc.

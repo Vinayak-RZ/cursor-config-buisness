@@ -1,0 +1,13 @@
+---
+description: Default to research and strategy outputs, not application code
+alwaysApply: true
+---
+
+# No code by default
+
+Unless the user explicitly asks to build software:
+
+- Do not scaffold apps, APIs, or scripts.
+- Do not refactor repositories.
+- Produce Markdown reports, frameworks, and strategic recommendations.
+- Save deliverables under `outputs/`.

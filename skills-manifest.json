@@ -1,0 +1,114 @@
+{
+  "version": 1,
+  "description": "Curated business skills — 44 pre-installed from pm-skills + custom research. Optional skills install on demand.",
+  "preinstalled": {
+    "count": 44,
+    "categories": {
+      "custom_research": [
+        "lead-research-assistant",
+        "analyze-industry",
+        "company-research",
+        "company-technical-research"
+      ],
+      "discovery": [
+        "brainstorm-ideas-new",
+        "brainstorm-experiments-new",
+        "identify-assumptions-new",
+        "prioritize-assumptions",
+        "opportunity-solution-tree",
+        "interview-script",
+        "summarize-interview"
+      ],
+      "strategy": [
+        "product-strategy",
+        "lean-canvas",
+        "value-proposition",
+        "pricing-strategy",
+        "monetization-strategy",
+        "swot-analysis",
+        "porters-five-forces"
+      ],
+      "execution": [
+        "create-prd",
+        "brainstorm-okrs",
+        "outcome-roadmap",
+        "prioritization-frameworks",
+        "pre-mortem",
+        "user-stories",
+        "strategy-red-team",
+        "summarize-meeting"
+      ],
+      "market_research": [
+        "user-personas",
+        "market-sizing",
+        "customer-journey-map",
+        "competitor-analysis"
+      ],
+      "gtm": [
+        "gtm-strategy",
+        "ideal-customer-profile",
+        "beachhead-segment",
+        "gtm-motions",
+        "competitive-battlecard",
+        "growth-loops"
+      ],
+      "marketing_growth": [
+        "north-star-metric",
+        "positioning-ideas",
+        "value-prop-statements",
+        "marketing-ideas"
+      ],
+      "analytics": [
+        "ab-test-analysis",
+        "metrics-dashboard"
+      ],
+      "shared": [
+        "graphify",
+        "find-skills"
+      ]
+    }
+  },
+  "optional_install": [
+    {
+      "name": "competitive-intel",
+      "installs": 581,
+      "command": "npx skills add alirezarezvani/claude-skills@competitive-intel -y --copy",
+      "when": "Deeper competitive intelligence beyond competitor-analysis"
+    },
+    {
+      "name": "linkedin-content",
+      "installs": 459,
+      "command": "npx skills add inference-sh/skills@linkedin-content -y --copy",
+      "when": "Writing LinkedIn posts for GTM"
+    },
+    {
+      "name": "content-marketing",
+      "installs": 194,
+      "command": "npx skills add scientiacapital/skills@content-marketing -y --copy",
+      "when": "Broader content marketing playbooks"
+    },
+    {
+      "name": "social-selling",
+      "installs": 71,
+      "command": "npx skills add chadboyda/agent-gtm-skills@social-selling -y --copy",
+      "when": "Social-led GTM and outbound"
+    },
+    {
+      "name": "solo-founder-gtm",
+      "installs": 64,
+      "command": "npx skills add tech-leads-club/agent-skills@solo-founder-gtm -y --copy",
+      "when": "Founder-led GTM with limited resources"
+    }
+  ],
+  "removed_from_pm_marketplace": {
+    "reason": "Redundant, niche, legal/toolkit, or coding-adjacent — see README",
+    "examples": [
+      "brainstorm-ideas-existing",
+      "draft-nda",
+      "grammar-check",
+      "sql-queries",
+      "dummy-dataset",
+      "shipping-artifacts"
+    ]
+  }
+}
