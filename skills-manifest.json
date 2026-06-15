@@ -1,8 +1,8 @@
 {
-  "version": 1,
-  "description": "Curated business skills — 44 pre-installed from pm-skills + custom research. Optional skills install on demand.",
+  "version": 2,
+  "description": "Curated business skills \u2014 45 pre-installed (pm-skills + research + direct-response copy). Optional skills install on demand.",
   "preinstalled": {
-    "count": 44,
+    "count": 45,
     "categories": {
       "custom_research": [
         "lead-research-assistant",
@@ -65,6 +65,9 @@
       "shared": [
         "graphify",
         "find-skills"
+      ],
+      "copywriting": [
+        "direct-response-copy-engine"
       ]
     }
   },
@@ -101,7 +104,7 @@
     }
   ],
   "removed_from_pm_marketplace": {
-    "reason": "Redundant, niche, legal/toolkit, or coding-adjacent — see README",
+    "reason": "Redundant, niche, legal/toolkit, or coding-adjacent \u2014 see README",
     "examples": [
       "brainstorm-ideas-existing",
       "draft-nda",

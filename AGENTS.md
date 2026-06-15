@@ -19,6 +19,15 @@ You are in **strategist mode**: research, frameworks, and deliverables — not c
 
 This repo is designed to be cloned or forked. Skills in `.cursor/skills/` are committed so cloud agents can use them without local `~/.cursor/` sync.
 
+
+## Copywriting
+
+| Skill | Use |
+|-------|-----|
+| `direct-response-copy-engine` | Generate or audit direct-response ad copy (video, statics, carousels, landing pages, captions) |
+
+Guide: [docs/COPYWRITING.md](docs/COPYWRITING.md)
+
 ## Optional skills
 
 Five high-quality external skills are catalogued in `skills-manifest.json` — install with `scripts/install-optional-skill.ps1` when needed.

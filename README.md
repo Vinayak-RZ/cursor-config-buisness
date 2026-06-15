@@ -40,7 +40,7 @@ This repository is a **portable strategist workspace** — not an application. I
 |--------|-------------|
 | **Type** | Cursor configuration repository (rules + skills + orchestration) |
 | **Mode** | Business / strategist — research, frameworks, written deliverables |
-| **Skills** | 44 pre-installed, curated agent skills in `.cursor/skills/` |
+| **Skills** | 45 pre-installed, curated agent skills in `.cursor/skills/` |
 | **Rules** | 2 project rules in `.cursor/rules/` shaping agent behavior |
 | **Orchestration** | `AGENTS.md` at repo root — entry point for the agent |
 | **Manifest** | `skills-manifest.json` — machine-readable skill index and optional catalog |
@@ -110,7 +110,7 @@ You open this repo in Cursor
 
 | Spec | Value |
 |------|-------|
-| Pre-installed skills | **44** |
+| Pre-installed skills | **45** |
 | Optional catalog skills | **5** (install on demand) |
 | Project rules | **2** (`.mdc` files) |
 | Skill format | Universal `SKILL.md` with YAML frontmatter (`name`, `description`) |
@@ -158,6 +158,14 @@ cursor-config-business/
 ## Skills inventory
 
 Full categorized list lives in [skills-manifest.json](skills-manifest.json). Summary:
+
+### Copywriting (1)
+
+| Skill | Purpose |
+|-------|--------|
+| `direct-response-copy-engine` | Generate/audit direct-response ad copy |
+
+[docs/COPYWRITING.md](docs/COPYWRITING.md)
 
 ### Custom research (4)
 
@@ -356,6 +364,14 @@ Do **not** merge both configs into one repo — token bloat and conflicting rule
 ---
 
 ## Example prompts
+
+### Direct-response ad copy
+
+```text
+Use direct-response-copy-engine Generate mode. Problem-aware, tired market.
+30s video script + 3 hooks. Real proof only. outputs/copy/
+```
+
 
 ### Lead generation
 

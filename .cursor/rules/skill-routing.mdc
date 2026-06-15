@@ -23,6 +23,9 @@ Curated set only (~44 skills). Full list: [skills-manifest.json](../../skills-ma
 | Pricing | `pricing-strategy`, `monetization-strategy` |
 | Metrics | `north-star-metric`, `metrics-dashboard`, `ab-test-analysis` |
 | User research | `interview-script`, `summarize-interview`, `user-personas` |
+| Direct-response ad copy, hooks, captions, landing page copy | `direct-response-copy-engine` |
+| Audit ad copy / pressure-test draft | `direct-response-copy-engine` (Audit mode) |
+| Short-form video script / carousel ad copy | `direct-response-copy-engine` |
 | Map knowledge from docs/files | `graphify` |
 
 Optional skills (not pre-installed): run `scripts/install-optional-skill.ps1 -Name linkedin-content` etc.
