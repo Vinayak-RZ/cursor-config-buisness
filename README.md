@@ -40,7 +40,7 @@ This repository is a **portable strategist workspace** — not an application. I
 |--------|-------------|
 | **Type** | Cursor configuration repository (rules + skills + orchestration) |
 | **Mode** | Business / strategist — research, frameworks, written deliverables |
-| **Skills** | 45 pre-installed, curated agent skills in `.cursor/skills/` |
+| **Skills** | 47 pre-installed, curated agent skills in `.cursor/skills/` |
 | **Rules** | 2 project rules in `.cursor/rules/` shaping agent behavior |
 | **Orchestration** | `AGENTS.md` at repo root — entry point for the agent |
 | **Manifest** | `skills-manifest.json` — machine-readable skill index and optional catalog |
@@ -50,7 +50,7 @@ When you open this repository as your Cursor workspace, the agent:
 
 - Routes tasks to the right PM/GTM/research skill
 - Produces structured Markdown reports instead of code by default
-- Uses proven frameworks (Lean Canvas, Opportunity Solution Tree, ICP, GTM strategy, etc.)
+- Uses proven frameworks (Lean Canvas, BMC, first principles, Opportunity Solution Tree, ICP, GTM strategy, etc.)
 - Can map knowledge from documents via `graphify`
 
 ---
@@ -72,7 +72,7 @@ Generic AI gives unstructured text. This config gives **repeatable business work
 1. **Separation of concerns** — business thinking and coding use different rules, skills, and mental models
 2. **Portability** — clone on any machine; cloud agents read skills from the repo
 3. **Forkability** — spin up initiative-specific repos (e.g. "Q3 GTM for Product X") from this base
-4. **Quality over quantity** — 44 high-value skills instead of 68+ with redundancy
+4. **Quality over quantity** — 47 high-value skills instead of 68+ with redundancy
 5. **Cloud-ready** — unlike `~/.cursor/skills/`, repo skills work in [Cursor Cloud Agents](https://cursor.com/docs/cloud-agent)
 
 ---
@@ -110,7 +110,7 @@ You open this repo in Cursor
 
 | Spec | Value |
 |------|-------|
-| Pre-installed skills | **45** |
+| Pre-installed skills | **47** |
 | Optional catalog skills | **5** (install on demand) |
 | Project rules | **2** (`.mdc` files) |
 | Skill format | Universal `SKILL.md` with YAML frontmatter (`name`, `description`) |
@@ -138,12 +138,17 @@ cursor-config-business/
 │   │   ├── no-code-default.mdc      alwaysApply: true
 │   │   └── skill-routing.mdc          Contextual skill → task mapping
 │   │
-│   └── skills/                        44 skill folders, each with SKILL.md
+│   └── skills/                        47 skill folders, each with SKILL.md
 │       ├── lead-research-assistant/
 │       ├── ideal-customer-profile/
 │       ├── create-prd/
 │       ├── graphify/
 │       └── ...
+│
+├── docs/
+│   ├── COPYWRITING.md
+│   ├── FIRST_PRINCIPLES.md
+│   └── BUSINESS_MODELS.md
 │
 ├── outputs/                           Deliverables (contents gitignored)
 │   └── .gitkeep
@@ -180,9 +185,13 @@ Full categorized list lives in [skills-manifest.json](skills-manifest.json). Sum
 
 `brainstorm-ideas-new`, `brainstorm-experiments-new`, `identify-assumptions-new`, `prioritize-assumptions`, `opportunity-solution-tree`, `interview-script`, `summarize-interview`
 
-### Strategy (7)
+### Strategy (9)
 
-`product-strategy`, `lean-canvas`, `value-proposition`, `pricing-strategy`, `monetization-strategy`, `swot-analysis`, `porters-five-forces`
+`product-strategy`, `lean-canvas`, `business-model`, `first-principles-thinking`, `value-proposition`, `pricing-strategy`, `monetization-strategy`, `swot-analysis`, `porters-five-forces`
+
+[docs/BUSINESS_MODELS.md](docs/BUSINESS_MODELS.md) — BMC, Magretta story, St. Gallen patterns.
+
+[docs/FIRST_PRINCIPLES.md](docs/FIRST_PRINCIPLES.md) — first-principles pass (Farnam Street, James Clear, operator essays).
 
 ### Execution (8)
 
@@ -280,7 +289,7 @@ git remote add origin https://github.com/YOUR_USER/your-initiative-repo.git
 git push -u origin main
 ```
 
-Open the initiative folder in Cursor — it inherits all 44 skills and rules.
+Open the initiative folder in Cursor — it inherits all 47 skills and rules.
 
 ---
 
@@ -317,7 +326,7 @@ Use graphify on the docs/ folder to map our competitive landscape documents.
 
 ### Method 5: Install optional catalog skills
 
-Best for: LinkedIn content, deeper competitive intel, founder-led GTM — without bloating the default 44.
+Best for: LinkedIn content, deeper competitive intel, founder-led GTM — without bloating the default 47.
 
 ```powershell
 .\scripts\install-optional-skill.ps1 -Name linkedin-content
@@ -426,6 +435,24 @@ Write a PRD for a smart notification system that reduces alert fatigue in our Sa
 ```
 
 → Invokes `graphify`
+
+### First principles
+
+```text
+Use first-principles-thinking on our pricing. We copied $49/seat because competitors charge that.
+Rebuild from value created, cost to serve, and willingness to pay.
+```
+
+→ Invokes `first-principles-thinking`
+
+### Business model
+
+```text
+Use the business-model skill. Design how we make money for a B2B workflow tool.
+Compare subscription vs pay-per-use vs solution-provider. Include BMC and economics.
+```
+
+→ Invokes `business-model`
 
 ---
 
@@ -539,12 +566,13 @@ cursor .
 
 ## Curating philosophy
 
-This repo contains **44 skills** curated from the **68-skill** [pm-skills marketplace](https://github.com/phuryn/pm-skills) plus 4 custom research skills.
+This repo contains **47 skills**: a curated subset of the **68-skill** [pm-skills marketplace](https://github.com/phuryn/pm-skills), plus custom research, copy, first-principles, and business-model skills.
 
 ### Included because
 
 - High-frequency PM/GTM workflows (ICP, PRD, discovery, GTM, positioning)
-- Frameworks with clear outputs (Lean Canvas, OST, battlecards)
+- Frameworks with clear outputs (Lean Canvas, BMC, OST, battlecards)
+- First-principles reasoning so agents do not cargo-cult incumbents
 - Custom research skills for lead gen and company intelligence
 - `graphify` for knowledge mapping across documents
 
@@ -556,7 +584,7 @@ This repo contains **44 skills** curated from the **68-skill** [pm-skills market
 | Legal / toolkit | `draft-nda`, `privacy-policy`, `grammar-check`, `review-resume` | Niche, not core PM/GTM |
 | Coding-adjacent | `sql-queries`, `shipping-artifacts`, `intended-vs-implemented` | Belongs in coding config |
 | Niche execution | `dummy-dataset`, `retro`, `sprint-plan`, `test-scenarios` | Low frequency for strategist mode |
-| Duplicate frameworks | `business-model`, `startup-canvas` | `lean-canvas` + `product-strategy` suffice |
+| Duplicate frameworks | `startup-canvas` | `lean-canvas` + `product-strategy` + `business-model` cover the same ground |
 
 See `skills-manifest.json` → `removed_from_pm_marketplace` for more examples.
 
@@ -632,6 +660,7 @@ npx skills find "gtm ideal customer"
 |--------|---------|-------|
 | [phuryn/pm-skills](https://github.com/phuryn/pm-skills) | MIT | Curated subset of 36 skills |
 | Custom research skills | Per skill file | lead-research, analyze-industry, company-research, company-technical-research |
+| `first-principles-thinking`, `business-model` | Original in this repo | Distills Farnam Street, James Clear, Magretta, Osterwalder, St. Gallen — not verbatim copies |
 | [graphify](https://github.com/) | Per skill file | Knowledge graph pipeline |
 | Optional catalog skills | Per upstream repo | Install on demand |
 
@@ -649,5 +678,7 @@ This config repository itself: use and fork freely for your own Cursor setups.
 | Find leads | "Use lead-research-assistant to find companies matching…" |
 | Define ICP | "Use ideal-customer-profile for…" |
 | Write a PRD | "Use create-prd for…" |
+| Rebuild from fundamentals | "Use first-principles-thinking on…" |
+| Design how we make money | "Use the business-model skill for…" |
 | Add LinkedIn skill | `.\scripts\install-optional-skill.ps1 -Name linkedin-content` |
 | Code something | Switch to a coding repo with `cursor-config-coding` |

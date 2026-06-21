@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "description": "Curated business skills \u2014 45 pre-installed (pm-skills + research + direct-response copy). Optional skills install on demand.",
+  "description": "Curated business skills \u2014 47 pre-installed (pm-skills + research + copy + first-principles + business-model). Optional skills install on demand.",
   "preinstalled": {
-    "count": 45,
+    "count": 47,
     "categories": {
       "custom_research": [
         "lead-research-assistant",
@@ -22,6 +22,8 @@
       "strategy": [
         "product-strategy",
         "lean-canvas",
+        "business-model",
+        "first-principles-thinking",
         "value-proposition",
         "pricing-strategy",
         "monetization-strategy",

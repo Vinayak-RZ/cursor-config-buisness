@@ -5,7 +5,7 @@ alwaysApply: false
 
 # Business skill routing
 
-Curated set only (~44 skills). Full list: [skills-manifest.json](../../skills-manifest.json).
+Curated set only (~47 skills). Full list: [skills-manifest.json](../../skills-manifest.json).
 
 | User intent | Skill |
 |-------------|-------|
@@ -19,7 +19,9 @@ Curated set only (~44 skills). Full list: [skills-manifest.json](../../skills-ma
 | Positioning / messaging | `positioning-ideas`, `value-prop-statements`, `value-proposition` |
 | PRD / specs | `create-prd` |
 | Discovery / assumptions | `brainstorm-ideas-new`, `identify-assumptions-new`, `prioritize-assumptions` |
+| First principles / rebuild from bedrock | `first-principles-thinking` |
 | Strategy canvas | `lean-canvas`, `product-strategy` |
+| How the enterprise creates/captures value (BMC, patterns) | `business-model` |
 | Pricing | `pricing-strategy`, `monetization-strategy` |
 | Metrics | `north-star-metric`, `metrics-dashboard`, `ab-test-analysis` |
 | User research | `interview-script`, `summarize-interview`, `user-personas` |

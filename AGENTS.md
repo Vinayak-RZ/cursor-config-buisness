@@ -28,6 +28,13 @@ This repo is designed to be cloned or forked. Skills in `.cursor/skills/` are co
 
 Guide: [docs/COPYWRITING.md](docs/COPYWRITING.md)
 
+## Thinking and business models
+
+| Skill | Use |
+|-------|-----|
+| `first-principles-thinking` | Rebuild from bedrock; challenge industry defaults. Guide: [docs/FIRST_PRINCIPLES.md](docs/FIRST_PRINCIPLES.md) |
+| `business-model` | Magretta story + BMC + St. Gallen patterns + economics. Guide: [docs/BUSINESS_MODELS.md](docs/BUSINESS_MODELS.md) |
+
 ## Optional skills
 
 Five high-quality external skills are catalogued in `skills-manifest.json` — install with `scripts/install-optional-skill.ps1` when needed.
