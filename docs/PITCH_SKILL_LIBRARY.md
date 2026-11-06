@@ -19,7 +19,7 @@ Skills live under `.cursor/skills/<name>/SKILL.md`.
 
 ## Sources and provenance
 
-URLs below were **access-checked 2026-11-07–08** (IST/UTC) for availability of the cited pages; **content can change**—re-read before legal reliance. This doc is **clean-room synthesis**: principles are cited; prose is not copied from third-party skills.
+URLs below were **access-checked 2026-11-07 (IST)** for availability of the cited pages (some checks fall on **2026-11-06 UTC** as the same calendar moment); **content can change**—re-read before legal reliance. This doc is **clean-room synthesis**: principles are cited; prose is not copied from third-party skills.
 
 **License claims:** Cite **repo LICENSE files** where listed. **Do not infer** “MIT” for third-party **blog posts** unless the page states it.
 
@@ -132,6 +132,6 @@ Use with **`pitch-workflow-router`** first if unsure.
 
 ## Changelog
 
-- **2026-11-08** — Venture bridge table; VC review two-axis verdict + proof types + optional fictional sensitivity; capital→proof milestones; Devpost online vs offline weights; provenance fixes (betahope, SkillMedev, USV); fixtures v2 + arithmetic check in verifier.
+- **2026-11-07 (IST)** — Venture bridge table; VC review two-axis verdict + proof types + optional fictional sensitivity; capital→proof milestones; Devpost online vs offline weights; provenance fixes (betahope, SkillMedev, USV); fixtures v2 + arithmetic check in verifier.
 - **2026-11-07** — Deepen VC outcome economics (Dixon sample + illustrations), YC execution/progress, proof-first order; evaluation fixtures; verifier YAML parse.
 - **2026-11-06** — Initial library on `main` (eight skills + this doc + verify script).
