@@ -1,6 +1,6 @@
 # Manual smoke scenarios for pitch skills (NOT empirical VC or investor validation).
 # Use with the checklist in docs/PITCH_SKILL_LIBRARY.md § Evaluation fixtures.
-# version: 1
+# version: 2
 
 fixtures:
   vc_seed_robotic_recycler:
@@ -34,12 +34,12 @@ fixtures:
         venture_thesis:
           - "Evidence map"
           - "three levels"
-          - "today" # today vs roadmap vs vision — phrasing flexible
+          - "Wedge-to-destination bridge"
         vc_narrative:
-          - "Outcome potential and investor fit" # include-if-known block when context supplied
-          - "execution" # progress / velocity / YC-style ratio framing
-      must_mention_historical_fund_concentration_as_sample_not_law: true  # Dixon / Horsley Bridge — only when discussing VC outcome economics
-      dixon_citation_required_when_discussing_vc_outcomes: "https://a16z.com/performance-data-and-the-babe-ruth-effect-in-venture-capital/"
+          - "Outcome potential and investor fit"
+          - "Progress"
+      must_mention_historical_fund_concentration_as_sample_not_law: true
+      dixon_citation_when_discussing_vc_outcomes: "https://a16z.com/performance-data-and-the-babe-ruth-effect-in-venture-capital/"
 
   hackathon_custom_product_judged:
     skill_chain_hint:
@@ -60,3 +60,42 @@ fixtures:
       must_not_force: ["TAM_slide", "fundraising_ask", "MLH_standard_four_criteria"]
       must_flag: "rubric_mismatch_if_MLH_assumed"
       must_prioritize: "honest_scope_label_mock_vs_working"
+
+  pitch_missing_proof:
+    skill_chain_hint:
+      - vc-pitch-review
+      - pitch-copy-and-slides
+    founder_supplied_facts:
+      slide_claims: "Leading platform; 40% cost savings; 20 customers."
+      raw_notes: "20 interviews; 3 unpaid pilots; simulation-only 40% savings figure; older deck said all paying."
+    expected_behavior:
+      must_flag: "claim_discrepancy_interviews_vs_customers"
+      must_flag: "simulation_vs_measured_savings"
+      must_not_invent: ["paying_customer_count", "measured_savings_percent"]
+      vc_review_should: "two_axis_verdict_and_proof_type_map"
+      pitch_copy_should_not: "mandatory_full_claim_ledger_unless_user_asks_full_review"
+
+  venture_scale_sensitivity:
+    skill_chain_hint:
+      - vc-pitch-review
+      - vc-investor-narrative
+    founder_supplied_facts:
+      user_request: "explicit fictional venture-scale sensitivity only"
+      fund_size_usd: 200000000
+      ownership_entry_pct: 10
+      cumulative_dilution_pct: 50
+      exit_equity_values_usd: [1000000000, 4000000000]
+      design_partners_unpaid: true
+    expected_precompute_arithmetic:
+      ownership_exit_pct: 5
+      proceeds_usd:
+        - 50000000
+        - 200000000
+      times_fund_approx:
+        - 0.25
+        - 1.0
+    expected_behavior:
+      label: "[FICTIONAL SENSITIVITY]"
+      must_not_present_as: "actual_investor_mandate_or_probability"
+      must_note_ignored: ["liquidation_preference", "follow_on", "fees", "debt", "timing"]
+      honest_fit: "unpaid_design_partners_are_not_revenue"

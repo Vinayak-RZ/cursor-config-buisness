@@ -2,10 +2,10 @@
 name: vc-investor-narrative
 description: >-
   Frame a startup story for VC-style evaluation: outcome potential at stage (with honest fund-level context
-  when known), execution velocity and progress versus time, path from wedge to scale, capital efficiency,
-  milestones, and objection prep—without prescribing round sizes, valuations, or universal return thresholds.
-  Use before meetings or alongside deck work. Pairs with venture-thesis-builder, pitch-deck-architect,
-  strategy-red-team for objections.
+  when known), execution velocity and progress versus time, capital-to-proof milestones when fundraising,
+  path from wedge to scale, and objection prep—without prescribing round sizes, valuations, or universal
+  return thresholds. Use before meetings or alongside deck work. Pairs with venture-thesis-builder,
+  pitch-deck-architect, strategy-red-team for objections.
 ---
 
 # VC Investor Narrative
@@ -27,89 +27,114 @@ Help the user **see the company as a time- and capital-bounded bet**: what must 
 - Do not present **“must return the whole fund”** per deal as an automatic test for every check size—fund math varies ([context](../../../docs/PITCH_SKILL_LIBRARY.md#sources-and-provenance)).
 - Do not refuse non-VC pitches; if the user is customer-only or hackathon, route to `hackathon-pitch-demo` or `pitch-deck-architect` with audience flag.
 - Do not assign **subjective probabilities** to ill-defined events (e.g. “% chance of $1B exit”) with no defensible basis—say **[CANNOT QUANTIFY]** instead.
-- Never **reverse-engineer** a required exit valuation or ownership from a fund headline to make the user’s story “fit”; illustration only when **explicitly requested** and labeled **illustrative**.
+- Never **reverse-engineer** a required exit valuation or ownership from a fund headline to make the user’s story “fit”; illustration only when **explicitly requested** and labeled **[FICTIONAL SENSITIVITY]** or **illustrative**.
 
 ## Inputs
 
 1. **Stage** (idea, pre-seed, seed, A…) and geography.
 2. **Intended investor type** if known (institutional VC, micro-VC, angel, strategic).
-3. **Round / use of funds** if known—or mark `[UNKNOWN]`.
-4. **Thesis + wedge** (can be output of `venture-thesis-builder`).
-5. **Traction & risks**—user-provided only.
-6. **Progress / velocity context** (per YC [how to pitch](https://www.ycombinator.com/blog/how-to-pitch-your-company)): **time working**, what shipped, **product + customers first**—not fundraising theater as the lead story unless that is genuinely the ask.
-7. Optional **fund constraints** for illustration: fund size, check, target ownership—**only if user supplied**.
+3. **Fundraising or not** — if **no raise** (customer deck, hackathon, intro call): **omit** capital milestone sections unless user asks “what if we raised.”
+4. **Round / use of funds** if known—or `[UNKNOWN]` / `[NEEDS INPUT]`.
+5. **Thesis + wedge** (can be output of `venture-thesis-builder`).
+6. **Traction & risks**—user-provided only.
+7. **Progress / velocity context** (YC [how to pitch](https://www.ycombinator.com/blog/how-to-pitch-your-company)): time working, what shipped, **product + customers first** over fundraising/biz-dev **as lead story** unless the ask is truly the raise.
+8. Optional **fund constraints** for illustration: fund size, check, target ownership—**only if user supplied** or user requests **[FICTIONAL SENSITIVITY]**.
+9. **YC Q7 — what do you want?** ([same source](https://www.ycombinator.com/blog/how-to-pitch-your-company)) — concrete **help**, **next meeting**, **investment**—user-stated only; `[NEEDS INPUT]` if missing.
 
 ## Execution & velocity (investor-perception)
 
-YC’s [seven questions](https://www.ycombinator.com/blog/how-to-pitch-your-company) include **progress**: *what’s your progress? ratio of work done to time working — product development and customers first over fundraising/biz dev* (**their wording — cited framing, not extra deck slides**).
+YC lists **progress**: *ratio of work done to time working — product development and customers first over fundraising/biz dev* (their framing — **not** an extra slide requirement).
 
-Use this as **narrative emphasis**, not a script:
-
-- State **elapsed calendar time** and **concrete shipped artifacts** (builds, pilots, users, revenue—whatever exists).
-- Make **strongest proof earlier** in the narrative when it is clearly the hook (**heuristic**); do not bury the lead to preserve a mechanical section order.
-- **Prior-round / other-startup benchmarks** are **not universal**—use only as qualitative comparison if the user offers them.
+- State elapsed time and **concrete shipped artifacts** (builds, pilots, users, revenue — whatever exists).
+- **Strongest proof earlier** in narrative when it is the hook (**heuristic**); do not bury it for section order dogma.
+- **Prior-round benchmarks** are not universal.
 
 ## Outcome economics & ambition (venture-scale vs solid small business)
 
-Many VCs evaluate whether the **outcome** *could* matter *relative to their fund*—this is **their** portfolio math, **not** a moral judgment on non-venture companies.
+Many VCs evaluate whether an outcome *could* matter *relative to their fund* — **their** portfolio math, not a judgment on every good business.
 
-**Historical sample (not a prediction or obligation for founders):** In [Chris Dixon, “Performance Data and the ‘Babe Ruth’ Effect in Venture Capital”](https://a16z.com/performance-data-and-the-babe-ruth-effect-in-venture-capital/) (8 Jun 2015), anonymized historical Horsley Bridge data is described such that **~6% of investments** (~**4.5%** of invested capital) produced **~60%** of total returns — a **highly concentrated** return pattern. Treat as **historical VC data**, **not** “your startup must …” and **not** a forward-looking rate.
+**Historical sample (not prediction):** [Chris Dixon / a16z](https://a16z.com/performance-data-and-the-babe-ruth-effect-in-venture-capital/) (8 Jun 2015) describes anonymized Horsley Bridge data: **~6%** of investments (**~4.5%** of invested $) generated **~60%** of returns — **concentration**, not a founder obligation.
 
 **Framing (no false precision):**
 
-- **Exit proceeds to investor** ≈ **exit valuation × ownership at exit** (then consider timing, structure, secondaries—**omit** or **label rough**).
-- **Dilution / future rounds** change ownership — use **broad labels** (“material dilution likely”) unless user provided a cap table; **never** invent a path.
-- **Risk** is real and **not** double-counted with fake probability math.
+- **Exit proceeds to investor** ≈ **exit value × ownership at exit** (then preferences, pro-rata, fees, timing — **label rough**).
+- **Dilution** reduces ownership — **broad labels** unless cap table given.
+
+### Optional [FICTIONAL SENSITIVITY] — only when user explicitly asks (e.g. “venture-scale illustration”)
+
+Label **[FICTIONAL]**. Multi-round sketch:
+
+**ownership_at_exit ≈ ownership_at_entry × Π(1 − dilution_i)** per round *i* (user gives each dilution or one aggregate “50% cumulative” as **their** assumption).
+
+**Example (user-requested, arithmetic only — not an investor mandate):** $200M fund, **10%** entry, **50% cumulative dilution** → **5%** at exit; **$1B** exit → **$50M** ≈ **0.25×** fund; **$4B** → **$200M** ≈ **1×** fund (simple common proceeds; **ignores** prefs, follow-on, fees, debt, timing).
+
+Never use sensitivity blocks to **force** the narrative to satisfy a fund.
 
 ### Optional include-if-known block: “Outcome potential and investor fit”
 
-**Emit this section only when** the user gave fund-like constraints *or* explicitly wants VC-fit honesty.
+Emit when user gave fund-like constraints **or** wants VC-fit honesty.
 
 ```markdown
-### Outcome potential and investor fit (illustrative / conditional)
+### Outcome potential and investor fit (conditional)
 
-- **Plain English**: To move the needle for a [fund size], outcomes often need to be **large** in absolute dollars returned — concentration in returns is a known VC pattern (Dixon 2015 cites historical data; not your forecast).
-- **Honest fit**: This may be a **strong business** that is still a **bad fit for classic VC** if outcomes are unlikely to meet *their* portfolio needs — state that plainly when relevant.
-- **If numbers supplied** — simple illustration only:
-  - Example (arithmetically correct, **not** advice): $100M fund, $1M check, **5%** ownership at entry, **2%** ownership at exit after dilution → **$1B** exit → **$20M** proceeds (= 2% × $1B) ≈ **20% of a $100M fund** *before* time value / reserves / fees / follow-on — label **[TOY ILLUSTRATION]** and stop; do **not** tune inputs until the story “works.”
+- **Plain English**: Outcomes that move a fund are often **large in absolute dollars**; historical VC returns are **concentrated** (Dixon 2015 — sample, not your forecast).
+- **Honest fit**: A **strong** business may still be a **poor fit for classic VC** — say so when true.
+- **Toy illustration** (only if user supplied numbers): [arithmetically correct, **[TOY ILLUSTRATION]**, stop — do not tune inputs until story “works”]
 ```
+
+## Capital to proof milestones (only if fundraising)
+
+**Skip** for customer decks, hackathons, or pure intro unless user is raising or asks.
+
+Table — **current uncertainty | milestone to reduce | baseline → target | measurement & time window | capital/work | slower-case decision**.
+
+- **Hire/launch activity** (building team, shipping v2) is **not** the same as **demand proof** — separate rows or label.
+- **Time windows** are **domain-specific** — do **not** default every row to “30/60/90” unless user names that cadence.
+
+**Optional one deck slide** (when using `pitch-deck-architect`): title **“What this capital proves”** — same columns **abbreviated**; user facts only.
+
+**Depth:** Do **not** duplicate full `business-model` runway models — hand off when user wants full economics.
+
+### YC Q7 alignment
+
+End fundraising outputs with **what you want** ([YC](https://www.ycombinator.com/blog/how-to-pitch-your-company)): intro, pilot, diligence materials, round — **`[NEEDS INPUT]`** if unstated.
+
+If user raises, note **what a next round would still need to underwrite** — **only** at high level; **no** invented round plans.
 
 ## Investor question map (structural)
 
-Use as a **checklist of themes**, not a script of exact questions. Phrasing varies by firm and partner.
-
 | Theme | What they are often testing |
 |--------|-----------------------------|
-| Problem–solution fit | Is the pain real, frequent, and valuable? |
-| Why now | What changed to make this buildable / winnable *now*? |
-| **Progress / velocity** | What shipped per unit time; product & customers vs meetings ([YC](https://www.ycombinator.com/blog/how-to-pitch-your-company)) |
-| Market | Bottom-up path; who pays; expansion (`market-sizing`). |
-| Model & margins | How money is made; scalability of costs (`business-model`). |
-| GTM | How you acquire; repeatability (`gtm-strategy`). |
-| Defensibility | Why not incumbents / fast followers—specific mechanism. |
-| Team | Relevant edge for *this* problem (no inflated bios). |
-| Metrics | Retention, growth, unit economics—as given; label gaps. |
-| Capital & milestones | What this financing unlocks; what “good” looks like—user-defined. |
+| Problem–solution fit | Pain real, frequent, valuable? |
+| Why now | What changed? |
+| **Progress / velocity** | Shipped vs time; product & customers ([YC](https://www.ycombinator.com/blog/how-to-pitch-your-company)) |
+| Market | Bottom-up; `market-sizing` |
+| Model & margins | `business-model` |
+| GTM | `gtm-strategy` |
+| Defensibility | Specific mechanism |
+| Team | Relevant edge |
+| Metrics | As given; label gaps |
+| **Capital → proof** | If fundraising: what uncertainty **this** raise removes |
 
 ## Objection rehearsal
 
 For each top concern:
 
 1. **Objection** (plain language).
-2. **Steel-man** — strongest reason it might be right.
-3. **Response** — evidence-backed; if evidence missing, say what you will show in 30/60/90 days.
-4. **Kill scenario** — what would make you *stop* pursuing this venture path (shows judgment).
+2. **Steel-man**.
+3. **Response** — evidence-backed; if missing, specify **what proof** and **by when** (**domain-appropriate** window — not automatic 30/60/90).
+4. **Kill scenario**.
 
-For deep adversarial passes, use `strategy-red-team`.
+Use `strategy-red-team` for deep adversarial work.
 
 ## Handoffs
 
 | Next | When |
 |------|------|
-| `pitch-deck-architect` | Turn narrative into slide list (send-ahead vs live). |
-| `pitch-copy-and-slides` | Polish headlines and bullets. |
-| `vc-pitch-review` | Simulate skeptical partner read. |
-| `strategy-red-team` | Break assumptions before meetings. |
+| `pitch-deck-architect` | Slide list + optional “capital to proof” slide |
+| `pitch-copy-and-slides` | Headlines |
+| `vc-pitch-review` | Skeptical read |
+| `strategy-red-team` | Assumption break |
 
 ## Output structure
 
@@ -117,26 +142,31 @@ For deep adversarial passes, use `strategy-red-team`.
 ## VC narrative — [company]
 
 ### Audience & assumptions
-[stage, investor type, what we are not claiming]
+[incl. fundraising Y/N]
 
-### Opening (plain — examples, not rigid menu)
-- Option: problem-first, proof-first, or founder moment — pick what matches **strongest real proof** ([YC flexibility — seven questions](https://www.ycombinator.com/blog/how-to-pitch-your-company))
+### Opening (examples — pick by strongest proof)
+...
 
-### Progress & velocity (YC Q3: work done / time working; product + customers lead)
-[table or bullets — user facts only]
+### Progress & velocity (YC Q3)
+...
 
 ### Outcome potential and investor fit
-[include-if-known block OR honest “non-VC path” note]
+[conditional OR [FICTIONAL SENSITIVITY] if user asked]
+
+### Capital to proof milestones (only if fundraising)
+...
 
 ### What must be true (load-bearing)
-1. …
-2. …
+...
 
 ### Evidence today vs needed
-| Claim | Now | Next proof |
+...
 
 ### Objection rehearsal (top themes)
 ...
+
+### What we want / next step (YC Q7)
+[user text or NEEDS INPUT]
 
 ### Questions to ask them (partner fit)
 ...
@@ -148,9 +178,10 @@ For deep adversarial passes, use `strategy-red-team`.
 
 ## Sources
 
-- Y Combinator — seven questions; progress / velocity emphasis ([How to Pitch Your Company](https://www.ycombinator.com/blog/how-to-pitch-your-company)).
-- Chris Dixon / a16z — historical return concentration in VC ([Performance Data and the “Babe Ruth” Effect](https://a16z.com/performance-data-and-the-babe-ruth-effect-in-venture-capital/), 8 Jun 2015) — **historical sample**, not founder obligation.
-- Sequoia — plan sections and ambition ([Writing a Business Plan](https://sequoiacap.com/article/writing-a-business-plan)).
-- First Round — partner meeting dynamics ([seed partner meeting](https://review.firstround.com/heres-what-you-can-really-expect-when-pitching-your-seed-stage-startup-at-a-vc-partner-meeting/)).
-- Point Nine — deck-as-filter, teaser vs full detail ([deck first](https://writing.pointnine.com/p/why-we-politely-ask-for-a-deck-first), [simple deck template](https://writing.pointnine.com/p/a-simple-pitch-deck-template)).
-- NFX — pitch prep patterns; treat checklist items as *their* emphasis ([Fundraising Manual](https://www.nfx.com/post/nfx-fundraising-manual)).
+- Y Combinator — seven questions; progress; what you want ([How to Pitch Your Company](https://www.ycombinator.com/blog/how-to-pitch-your-company)).
+- Chris Dixon / a16z — historical concentration ([Performance Data and the “Babe Ruth” Effect](https://a16z.com/performance-data-and-the-babe-ruth-effect-in-venture-capital/), 8 Jun 2015).
+- Sequoia — plan sections ([Writing a Business Plan](https://sequoiacap.com/article/writing-a-business-plan)).
+- Fred Wilson / USV — **one firm’s** historical model (outcomes-per-fund; realized exits; ownership thesis) — see [library doc](../../../docs/PITCH_SKILL_LIBRARY.md#sources-and-provenance) for link; **not** universal law.
+- First Round — partner meetings ([seed partner meeting](https://review.firstround.com/heres-what-you-can-really-expect-when-pitching-your-seed-stage-startup-at-a-vc-partner-meeting/)).
+- Point Nine — deck first ([deck first](https://writing.pointnine.com/p/why-we-politely-ask-for-a-deck-first), [template](https://writing.pointnine.com/p/a-simple-pitch-deck-template)).
+- NFX — [Fundraising Manual](https://www.nfx.com/post/nfx-fundraising-manual) (firm checklist — not universal).

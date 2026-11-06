@@ -36,6 +36,7 @@ This skill outputs **Markdown structure only**. The user builds slides in their 
 - **Fewer slides**, talk track carries detail (YC [deck design](https://www.ycombinator.com/blog/how-to-design-a-better-pitch-deck): **about five to seven core ideas** they want remembered — **their** target as **design guidance**, **not** a lab-tested memory law).
 - Big numbers and proofs on slides; nuance spoken.
 - Optional **hidden appendix** cues (First Round — [partner meeting](https://review.firstround.com/heres-what-you-can-really-expect-when-pitching-your-seed-stage-startup-at-a-vc-partner-meeting/)).
+- **Optional (only if fundraising):** one slide **“What this capital proves”** — abbreviated columns from `vc-investor-narrative` *Capital to proof milestones* (uncertainty → milestone → measure → time → capital/work); skip for customer or hackathon decks.
 
 ## Default spine (adapt to stage)
 

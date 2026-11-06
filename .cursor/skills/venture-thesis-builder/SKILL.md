@@ -60,11 +60,22 @@ Turn **real founder facts** into a **venture-scale story investors can sanity-ch
    - *Product depth*: one product family → broader workflows / seats.
    - *Market*: one segment → adjacent segments with same core insight.
    - *Network / platform*: only if mechanism is real (see NFX manual cited in [library doc](../../../docs/PITCH_SKILL_LIBRARY.md)).
-5. **Capture / scale logic** — what must change (product, channel, cost, data, regulatory) for **meaningfully** larger outcomes; no fake step functions.
-6. **Optional compounding** — name mechanism + **existing** early signs or `[NEEDS INPUT]`.
-7. **State “if we win”**: 1 paragraph on the **different world**—concrete, not adjectives.
-8. **Risks & alternatives**: 2–3 honest failure modes (`strategy-red-team` for deep adversarial).
-9. **Handoff**: `pitch-deck-architect` (structure), `vc-investor-narrative` (investor lens + outcome framing).
+5. **Wedge-to-destination bridge (falsifiable)** — not a vertical market list. Build a **compact table** with **at most two expansion steps** from wedge toward the long-range thesis (add a second table row only if Step 2 is real):
+
+| Step | Starting customer/job | New customer/job unlocked | Transferable asset from prior step | Why adopt / pay | Distribution or margin change | Evidence vs assumption | Dependency | Falsifier / next test |
+|------|------------------------|---------------------------|------------------------------------|-----------------|------------------------------|-------------------------|------------|------------------------|
+| 1 | … | … | … | … | … | … | … | … |
+| 2 (optional) | … | … | … | … | … | … | … | … |
+
+**Transferable asset** must be **concrete** (distribution relationship, workflow integration, brand, IP, **data rights**, etc.) — distinguish **hypothesized** vs **already demonstrated**.
+
+**“Data accumulates”** is **not** a network effect by itself — ask: *who benefits from reuse, who opts in, what rights exist, does participation make the product more valuable for others?* If mechanism unclear → `[NEEDS INPUT]`.
+
+6. **Capture / scale logic** — what must change (product, channel, cost, data, regulatory) for **meaningfully** larger outcomes; no fake step functions.
+7. **Optional compounding** — name mechanism + **existing** early signs or `[NEEDS INPUT]`.
+8. **State “if we win”**: 1 paragraph on the **different world**—concrete, not adjectives.
+9. **Risks & alternatives**: 2–3 honest failure modes (`strategy-red-team` for deep adversarial).
+10. **Handoff**: `pitch-deck-architect` (structure), `vc-investor-narrative` (investor lens + outcome framing).
 
 ## Output structure
 
@@ -86,6 +97,9 @@ Turn **real founder facts** into a **venture-scale story investors can sanity-ch
 
 ### Path to large outcome & capture logic
 ...
+
+### Wedge-to-destination bridge (≤2 expansion steps)
+[table from process — each row falsifiable]
 
 ### Compounding (optional — only if real)
 Mechanism: ...

@@ -15,7 +15,7 @@ Win on **what organizers say they score**—usually the **build and demo**—not
 
 **Fact — MLH standard rules** list judging criteria for digital/MLH-category events as **Technology, Design, Completion, Learning** (equal weight); judges may use gut feel; **pitch quality is explicitly not** what MLH standard criteria score ([standard-hackathon-rules.md](https://github.com/MLH/mlh-policies/blob/main/standard-hackathon-rules.md)). MLH also states **demos strongly encouraged**; **pitches discouraged** relative to showing the thing—read the current file for exact wording.
 
-**Fact — Devpost** describes typical criteria examples (idea quality, implementation, potential impact) and how hosts configure weights—**check the specific event page** ([judging help](https://help.devpost.com/article/64-judging-public-voting)).
+**Fact — Devpost** ([Judging & public voting](https://help.devpost.com/article/64-judging-public-voting)): hosts define criteria; **online judging on the platform uses equally weighted criteria** by default; **unequal percentage weights** require **offline** judging workflow. **Event-posted rules override** any generic Devpost/MLH default ([same source](https://help.devpost.com/article/64-judging-public-voting)).
 
 ## Hard rules
 
