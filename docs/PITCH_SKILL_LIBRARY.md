@@ -19,7 +19,7 @@ Skills live under `.cursor/skills/<name>/SKILL.md`.
 
 ## `SOURCES.md` (provenance summary)
 
-Primary and supplemental references used in this library (URLs checked **2025-11-06** in draft; **re-verify** before legal reliance). This doc is **clean-room synthesis**: principles are cited; text is not copied from third-party skills.
+Primary and supplemental references used in this library (URLs checked **2026-11-06** in draft; **re-verify** before legal reliance). This doc is **clean-room synthesis**: principles are cited; text is not copied from third-party skills.
 
 ### Tier A — primary / official
 
@@ -124,4 +124,4 @@ If a commissioned draft appears at `/workspace/pitch-skill-library-draft/`, trea
 
 ## Changelog
 
-- **2025-11-06** — Initial library added on `main` (seven skills + this doc + verify script).
+- **2026-11-06** — Initial library added on `main` (eight skills + this doc + verify script).
