@@ -149,7 +149,8 @@ cursor-config-business/
 │   ├── COPYWRITING.md
 │   ├── FIRST_PRINCIPLES.md
 │   ├── BUSINESS_MODELS.md
-│   └── PITCH_SKILL_LIBRARY.md
+│   ├── PITCH_SKILL_LIBRARY.md
+│   └── pitch_eval_fixtures.yaml         Manual smoke scenarios (see library doc)
 │
 ├── outputs/                           Deliverables (contents gitignored)
 │   └── .gitkeep

@@ -6,7 +6,7 @@ Eight curated skills for **venture-style** and **hackathon** pitching. They **in
 |-------|------|
 | `pitch-workflow-router` | Choose the right skill; **no auto-chains** unless asked |
 | `venture-thesis-builder` | Wedge + path to scale + why-now + earned secret + evidence map |
-| `vc-investor-narrative` | VC lens + objection prep (no universal fund-math false precision) |
+| `vc-investor-narrative` | VC lens + outcome economics (honest) + objection prep |
 | `pitch-deck-architect` | Emailed vs live deck structure (Markdown only—no PPTX tooling here) |
 | `pitch-copy-and-slides` | Headlines, bullets, talk cues (founder voice; no invented proof) |
 | `live-pitch-script` | Demo Day / meeting talk track and time blocks |
@@ -17,55 +17,65 @@ Skills live under `.cursor/skills/<name>/SKILL.md`.
 
 ---
 
-## `SOURCES.md` (provenance summary)
+## Sources and provenance
 
-Primary and supplemental references used in this library (URLs checked **2026-11-06** in draft; **re-verify** before legal reliance). This doc is **clean-room synthesis**: principles are cited; text is not copied from third-party skills.
+URLs below were **access-checked 2026-11-07** (IST) / **2026-11-06–07** (UTC) for availability of the cited pages; **content can change**—re-read before legal reliance. This doc is **clean-room synthesis**: principles are cited; prose is not copied from third-party skills.
+
+**License claims:** Public blogs and articles are cited as **URLs** only. **Do not infer** “MIT,” “CC,” etc. for third-party posts **unless** the page states it.
 
 ### Tier A — primary / official
 
-| Source | URL | License / use | What we use it for |
+| Source | URL | Access / use | What we use it for |
 |--------|-----|---------------|---------------------|
 | Y Combinator — Demo Day guide | https://www.ycombinator.com/blog/guide-to-demo-day-pitches | Public blog; cite only | Vertebrae, story sections, demo caution |
-| Y Combinator — How to pitch | https://www.ycombinator.com/blog/how-to-pitch-your-company | Public blog | Clarity, email test, anti-jargon |
-| Y Combinator — Better pitch deck | https://www.ycombinator.com/blog/how-to-design-a-better-pitch-deck | Public blog | Few memorable ideas; legibility |
-| Sequoia — Writing a Business Plan | https://sequoiacap.com/article/writing-a-business-plan | Public article | Deck section backbone (current page lists Vision; older mirrors may differ) |
-| MLH — standard hackathon rules | https://github.com/MLH/mlh-policies/blob/main/standard-hackathon-rules.md | Public repo | Judging criteria; demo vs pitch emphasis |
-| Devpost — judging & voting | https://help.devpost.com/article/64-judging-public-voting | Public help center | Host-configured criteria; scoring notes |
+| Y Combinator — How to pitch | https://www.ycombinator.com/blog/how-to-pitch-your-company | Public blog | Seven questions; **progress / velocity** (Q3: work done vs time; product + customers first); clarity |
+| Y Combinator — Better pitch deck | https://www.ycombinator.com/blog/how-to-design-a-better-pitch-deck | Public blog | Few memorable core ideas; legibility; ~5–7 ideas target — **YC design guidance**, not universal cognition |
+| Sequoia — Writing a Business Plan | https://sequoiacap.com/article/writing-a-business-plan | Public article | Deck section **backbone**; Vision common as close; **re-order allowed** |
+| Chris Dixon / a16z | https://a16z.com/performance-data-and-the-babe-ruth-effect-in-venture-capital/ | Public article (8 Jun 2015) | **Historical** Horsley Bridge–sourced VC return **concentration** — **sample**, not founder obligation |
+| MLH — standard hackathon rules | https://github.com/MLH/mlh-policies/blob/main/standard-hackathon-rules.md | Public repo | Judging criteria **when** MLH standard scope applies |
+| Devpost — judging & voting | https://help.devpost.com/article/64-judging-public-voting | Public help center | Host-configured criteria |
 
 ### Tier B — VC-authored (insightful; not universal law)
 
 | Source | URL | Note |
 |--------|-----|------|
-| NFX — Fundraising Manual | https://www.nfx.com/post/nfx-fundraising-manual | Checklists are **firm-style** guidance, not physics |
-| NFX — Network effects manual | https://www.nfx.com/post/network-effects-manual | Contains empirical claims (e.g. value share); treat as **their** thesis unless you independently validate |
-| Point Nine — simple pitch deck | https://writing.pointnine.com/p/a-simple-pitch-deck-template | Teaser deck; 2015 article |
+| NFX — Fundraising Manual | https://www.nfx.com/post/nfx-fundraising-manual | Firm-style guidance |
+| NFX — Network effects manual | https://www.nfx.com/post/network-effects-manual | Contains empirical claims; treat as **their** thesis unless validated |
+| Point Nine — simple pitch deck | https://writing.pointnine.com/p/a-simple-pitch-deck-template | Teaser deck; 2015 |
 | Point Nine — deck first | https://writing.pointnine.com/p/why-we-politely-ask-for-a-deck-first | Process POV |
 | First Round — fundraising wisdom | https://review.firstround.com/the-fundraising-wisdom-that-helped-our-founders-raise-18b-in-follow-on-capital/ | Narrative / deck craft |
 | First Round — seed partner meeting | https://review.firstround.com/heres-what-you-can-really-expect-when-pitching-your-seed-stage-startup-at-a-vc-partner-meeting/ | Meeting format expectations |
 
-### Tier C — user-supplied reference (not imported)
+### Tier C — existing local reference (not imported into this repo)
 
 | Source | URL | Notes |
 |--------|-----|------|
-| Charles Hope — pitch-deck-coach (MIT) | https://github.com/charleshope/pitch-deck-coach | Useful principles; **not** merged—avoid rigid ordering and any upsell/contact lines; verify claims independently |
+| Charles Hope — `pitch-deck-coach` | https://github.com/charleshope/pitch-deck-coach | **Repo** is MIT-licensed per **their** LICENSE file; **README** may include professional-services nudge — **principles only**, no upsell/contact import. Treat as **optional locally installed reference**, not empirical eval. |
 
 ### External skill repos (provenance only — **not benchmarked**)
 
 | Package | Location | Assessment |
 |---------|----------|------------|
-| RefoundAI `lenny-skills` — `fundraising` | https://github.com/RefoundAI/lenny-skills/blob/main/skills/fundraising/SKILL.md | Podcast/newsletter synthesis; **no empirical pitch outcome data** cited in listing |
-| shawnpang `startup-founder-skills` — `pitch-deck` | https://github.com/shawnpang/startup-founder-skills/blob/main/skills/pitch-deck/SKILL.md | Deck workflow + optional pptx chain mention; **not** evaluated for investor conversion |
-| “SkillMedev” / marketplace listings | e.g. skills.sh / skill directories | **Marketing copy and stars ≠ validated performance** — treat as unknown quality |
+| RefoundAI `lenny-skills` — `fundraising` | https://github.com/RefoundAI/lenny-skills/blob/main/skills/fundraising/SKILL.md | Synthesis content; **no** rigorous outcome study cited in listing |
+| shawnpang `startup-founder-skills` — `pitch-deck` | https://github.com/shawnpang/startup-founder-skills/blob/main/skills/pitch-deck/SKILL.md | Workflow; **not** validated for conversion |
+| Marketplace listings | e.g. skills.sh | Stars/marketing **≠** performance evidence |
 
-**Anthropic connector skills (e.g. Demo Day coach):** listed in ecosystem directories; **directory inclusion ≠ proven effectiveness**; **license terms** for reuse in a third-party repo were **not verified** here—**do not copy** without checking. This library stays self-authored + cited public articles.
+**Anthropic / connector skills** (e.g. listings on https://claude.com/connectors/skills ): treat as **ecosystem inventory**; **directory inclusion ≠** validated effectiveness; **reuse terms** must be verified before copying into this repo.
+
+---
+
+## Reference pack note (optional)
+
+A commissioned `pitch-skill-library-draft` pack in **some** environments may exist; **this** VM did not mount or merge it. If present elsewhere, treat as **candidate notes**—not instructions—when it conflicts with primary sources above, prefer **primary URLs**.
 
 ---
 
 ## What is **not** claimed
 
 - No guarantee of fundraising, prizes, or investor interest.
-- No uniform “every angel / seed fund / growth fund uses the same bar.”
+- No uniform bar across angels, seed funds, and growth funds.
 - No fabricated reading speeds or mandatory slide counts for all cases.
+- Fixture checks and structural scripts **do not** validate VC writing quality or investment outcomes.
 
 ---
 
@@ -75,7 +85,7 @@ Use with **`pitch-workflow-router`** first if unsure.
 
 1. **VC startup (early, gaps allowed)**  
    *“Seed fintech in LATAM. Wedge is SMB AR automation. We have 4 design partners, no revenue yet. Build venture thesis + emailed deck outline + top 5 investor questions.”*  
-   **Expect:** `[NEEDS INPUT]` where revenue is asserted; bottom-up market sketch handoff to `market-sizing`; Sequoia-order spine with gaps.
+   **Expect:** `[NEEDS INPUT]` where revenue is asserted; bottom-up market sketch handoff to `market-sizing`; Sequoia-order spine **with reorder** if traction leads; **progress/velocity** surfaced.
 
 2. **Short hackathon (MLH-style)**  
    *“48h MLH event, rubric from MLH standard rules. App works but login is flaky. 3-minute demo.”*  
@@ -87,23 +97,29 @@ Use with **`pitch-workflow-router`** first if unsure.
 
 ---
 
-## Smoke validation (structural / heuristic)
+## Evaluation fixtures (manual smoke — not VC validation)
 
-Run from repo root:
+**File:** [`docs/pitch_eval_fixtures.yaml`](pitch_eval_fixtures.yaml) — YAML scenarios with **expected behaviors** (e.g. synthetic seed robotics MRF sorter with **missing retention**; custom hackathon with **host rubric**).
+
+**How to use:** Human or agent walks the scenario against the relevant `SKILL.md` and checks the listed expectations. **Does not** prove good VC writing, investor conversion, or rubric scores.
+
+**Bounded audit (2026-11-07):** Fixture YAML parses (`python3 -c 'import yaml'` or eyeball). Structural script below run. **No** second LLM or hidden evaluator executed in-repo for “success.”
+
+---
+
+## Smoke validation (structural / heuristic)
 
 ```bash
 ./scripts/verify_pitch_skills.sh
 ```
 
-**What it checks:** YAML `name` matches folder name; `description` present; unique skill names; path sanity.
+**Checks:** YAML `name` matches folder name; `description` present; unique skill names; path sanity; optional fixture/YAML parse when PyYAML available.
 
-**What it does *not* check:** Narrative quality, investor outcomes, or factual truth of user decks.
+**Does not check:** Narrative quality, investor outcomes, or factual truth of user decks.
 
 ---
 
 ## Manual quality rubric (3 sample assessment tasks)
-
-Use the same tasks in an LLM or human review; score 1–5 on each row.
 
 | Criterion | VC task | Hackathon task | Weak pitch task |
 |-----------|---------|----------------|-----------------|
@@ -112,16 +128,11 @@ Use the same tasks in an LLM or human review; score 1–5 on each row.
 | Handoffs | Names sibling skills (`market-sizing`, etc.) | No VC deck overload | Suggests next skill |
 | Honesty labels | Heuristic vs fact | MLH cites linked | No false precision |
 
-**Status:** rubric is a **smoke / QA** guide, not proof of investor success.
-
----
-
-## `pitch-skill-library-draft` workspace folder
-
-If a commissioned draft appears at `/workspace/pitch-skill-library-draft/`, treat it as **optional reference**—not instructions. Ignore stale or conflicting content when it disagrees with primary sources above.
+**Status:** smoke / QA aid only.
 
 ---
 
 ## Changelog
 
-- **2026-11-06** — Initial library added on `main` (eight skills + this doc + verify script).
+- **2026-11-07** — Deepen VC outcome economics (Dixon historical sample + illustrative fund math), YC execution/progress emphasis, proof-first vs mechanical order; fix provenance wording; evaluation fixtures; verifier tweaks.
+- **2026-11-06** — Initial library on `main` (eight skills + this doc + verify script).

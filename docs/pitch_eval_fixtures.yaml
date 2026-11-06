@@ -1,0 +1,62 @@
+# Manual smoke scenarios for pitch skills (NOT empirical VC or investor validation).
+# Use with the checklist in docs/PITCH_SKILL_LIBRARY.md § Evaluation fixtures.
+# version: 1
+
+fixtures:
+  vc_seed_robotic_recycler:
+    skill_chain_hint:
+      - venture-thesis-builder
+      - vc-investor-narrative
+      - vc-pitch-review
+    founder_supplied_facts:
+      company: "ExampleCo Sort (synthetic)"
+      wedge: "Vision sorter pilot for one independent MRF in Ohio; 6-week build."
+      stage: "seed"
+      time_working_months: 5
+      product_state: "Pilot unit installed; sorts 3 material classes; cloud dashboard mock."
+      customers: "1 pilot site, unpaid; LOI from second site (user says non-binding)."
+      revenue: "none"
+      missing_evidence:
+        - "retention / uptime across seasons"
+        - "unit economics vs manual sort"
+      traction_claims_user_made:
+        engineering_commits_per_week: 40
+        pilot_tons_processed: 120
+      optional_investor_context:
+        fund_size_usd: 100000000
+        check_usd: 1000000
+        ownership_at_entry_pct: 5
+        ownership_at_exit_assumed_pct: 2
+    expected_behavior:
+      must_not_invent: ["revenue", "funded_rounds", "other_investors", "retention_pct"]
+      must_label_gaps: true
+      must_include_sections_any_of:
+        venture_thesis:
+          - "Evidence map"
+          - "three levels"
+          - "today" # today vs roadmap vs vision — phrasing flexible
+        vc_narrative:
+          - "Outcome potential and investor fit" # include-if-known block when context supplied
+          - "execution" # progress / velocity / YC-style ratio framing
+      must_mention_historical_fund_concentration_as_sample_not_law: true  # Dixon / Horsley Bridge — only when discussing VC outcome economics
+      dixon_citation_required_when_discussing_vc_outcomes: "https://a16z.com/performance-data-and-the-babe-ruth-effect-in-venture-capital/"
+
+  hackathon_custom_product_judged:
+    skill_chain_hint:
+      - hackathon-pitch-demo
+    event:
+      format: "university club hackathon; NOT MLH standard digital/MLH category"
+      time_limit_minutes: 3
+      rubric_host_defined:
+        - "innovation"
+        - "technical execution"
+        - "feasibility"
+        - "presentation"
+      note: "Do not substitute MLH Technology/Design/Completion/Learning unless event is MLH-standard scope."
+    founder_supplied_facts:
+      product: "Chart-only mock of carbon dashboard; no backend."
+      demo_path: "static slides + Figma"
+    expected_behavior:
+      must_not_force: ["TAM_slide", "fundraising_ask", "MLH_standard_four_criteria"]
+      must_flag: "rubric_mismatch_if_MLH_assumed"
+      must_prioritize: "honest_scope_label_mock_vs_working"

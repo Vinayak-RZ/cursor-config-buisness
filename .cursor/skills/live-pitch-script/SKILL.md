@@ -11,7 +11,7 @@ description: >-
 
 ## Purpose
 
-Produce a **spoken arc** aligned to **how YC frames Demo Day**: clarity, excitement, informative substance, memorability—and “vertebrae,” the **3–4** points people actually remember ([Demo Day guide](https://www.ycombinator.com/blog/guide-to-demo-day-pitches)).
+Produce a **spoken arc** aligned to **how YC frames Demo Day**: clarity, excitement, informative substance, memorability—and “vertebrae,” the **few** memorable beats the audience should retain ([Demo Day guide](https://www.ycombinator.com/blog/guide-to-demo-day-pitches); they illustrate with **three–four** points—**not** a universal memory law).
 
 **Heuristic (YC):** demos often fail in short live pitches; prioritize **rapid clarity** on what the product does unless the user has a reliable demo path—do not assume live demo works (same source).
 
@@ -25,7 +25,7 @@ Produce a **spoken arc** aligned to **how YC frames Demo Day**: clarity, excitem
 
 1. Total time (e.g. 2, 3, 5, 10 minutes)—user-stated.
 2. Venue constraints (slides only, demo ok, pitch clock strict).
-3. **Vertebrae** — the 3–4 beats the user wants remembered (if missing, derive only from user text).
+3. **Vertebrae** — the **few** beats the user wants remembered (YC often uses **three–four** as illustration—adapt to time and proof).
 4. Risk areas user fears (questions, weak slides).
 
 ## Structure templates
@@ -41,8 +41,8 @@ Opening **purpose line**; 2–3 proof peaks; **explicit pause cues** for questio
 ## Process
 
 1. Lock **one-sentence purpose** (YC / Sequoia: what you do, plain words).
-2. Choose vertebrae (max 4); **one memorable proof** each—user-supplied.
-3. Draft **full script** (~130–180 words per delivered minute as rough guide—**not** exact for all speakers).
+2. Choose vertebrae (typically **few**; YC examples often use **three–four**); **one memorable proof** each—user-supplied.
+3. Draft **full script** — length scales to requested time (words-per-minute varies widely—**avoid** false precision).
 4. Add **if cut for time** shorter blocks (50%, 80% versions).
 5. Add **if interrupted** micro-responses for top 5 questions (`vc-investor-narrative` for deeper objection work).
 6. Add **delivery cues** (pace, emphasis)—behavioral, optional.
@@ -65,7 +65,7 @@ time, format, vertebrae, proof available
 ### Demo decision
 [use / skip / backup] + rationale per YC demo caution
 
-### Likely questions (short answers)
+### Questions that may come up (short answers; examples—not guaranteed)
 ...
 
 ### Rehearsal checklist

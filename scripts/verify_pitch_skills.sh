@@ -67,6 +67,22 @@ if ! [[ -f "$ROOT/docs/PITCH_SKILL_LIBRARY.md" ]]; then
   failures=$((failures + 1))
 fi
 
+if ! [[ -f "$ROOT/docs/pitch_eval_fixtures.yaml" ]]; then
+  echo "ERROR: missing docs/pitch_eval_fixtures.yaml"
+  failures=$((failures + 1))
+fi
+
+banner "YAML fixtures parse"
+if command -v python3 >/dev/null 2>&1; then
+  if python3 -c "import yaml; yaml.safe_load(open('$ROOT/docs/pitch_eval_fixtures.yaml'))" 2>/dev/null; then
+    echo "OK: pitch_eval_fixtures.yaml parses (PyYAML)"
+  else
+    echo "NOTE: pitch_eval_fixtures.yaml not parsed (install PyYAML or fix YAML) — skipped"
+  fi
+else
+  echo "NOTE: python3 missing — skip YAML parse"
+fi
+
 # Optional: heuristic scan for generic grandiosity in pitch SKILL.md files
 banner "Heuristic scan (generic grandiosity)"
 grandiosity_hits=0

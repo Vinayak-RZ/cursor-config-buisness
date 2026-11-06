@@ -45,9 +45,9 @@ Differentiate from `direct-response-copy-engine`: that skill is for **paid media
 ## Process
 
 1. **Slide audit** — For each slide: one-sentence **job**; kill duplicate ideas; flag overloaded slides.
-2. **Headline** — 6–12 words max; must state the single idea.
-3. **Bullets** — 3 max; each a fact or claim with implied proof source (user-named).
-4. **Talk track** — 20–45 seconds spoken per slide (guidance only—not strict timing law); 1–2 sentences each.
+2. **Headline** — **Heuristic:** ~6–12 words; must state the single idea (not a universal investor rule—brevity for skimmability).
+3. **Bullets** — **Heuristic:** 3 max; each a fact or claim with implied proof source (user-named).
+4. **Talk track** — Spoken cue per slide (duration varies by speaker and room—avoid **mandatory** second-level timing).
 5. **Q&A bait** — list 2 questions this slide may trigger; answer outline from user facts.
 6. **Grandiose scan** — list lines that fail “only we could say this” — rewrite or remove.
 
