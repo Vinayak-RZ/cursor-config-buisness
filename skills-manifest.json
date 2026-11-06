@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "description": "Curated business skills \u2014 47 pre-installed (pm-skills + research + copy + first-principles + business-model). Optional skills install on demand.",
+  "description": "Curated business skills \u2014 55 pre-installed (pm-skills + research + copy + first-principles + business-model + pitch/VC). Optional skills install on demand.",
   "preinstalled": {
-    "count": 47,
+    "count": 55,
     "categories": {
       "custom_research": [
         "lead-research-assistant",
@@ -70,6 +70,16 @@
       ],
       "copywriting": [
         "direct-response-copy-engine"
+      ],
+      "pitch_vc": [
+        "pitch-workflow-router",
+        "venture-thesis-builder",
+        "vc-investor-narrative",
+        "pitch-deck-architect",
+        "pitch-copy-and-slides",
+        "live-pitch-script",
+        "vc-pitch-review",
+        "hackathon-pitch-demo"
       ]
     }
   },

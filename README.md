@@ -40,7 +40,7 @@ This repository is a **portable strategist workspace** — not an application. I
 |--------|-------------|
 | **Type** | Cursor configuration repository (rules + skills + orchestration) |
 | **Mode** | Business / strategist — research, frameworks, written deliverables |
-| **Skills** | 47 pre-installed, curated agent skills in `.cursor/skills/` |
+| **Skills** | 55 pre-installed, curated agent skills in `.cursor/skills/` |
 | **Rules** | 2 project rules in `.cursor/rules/` shaping agent behavior |
 | **Orchestration** | `AGENTS.md` at repo root — entry point for the agent |
 | **Manifest** | `skills-manifest.json` — machine-readable skill index and optional catalog |
@@ -72,7 +72,7 @@ Generic AI gives unstructured text. This config gives **repeatable business work
 1. **Separation of concerns** — business thinking and coding use different rules, skills, and mental models
 2. **Portability** — clone on any machine; cloud agents read skills from the repo
 3. **Forkability** — spin up initiative-specific repos (e.g. "Q3 GTM for Product X") from this base
-4. **Quality over quantity** — 47 high-value skills instead of 68+ with redundancy
+4. **Quality over quantity** — 55 high-value skills instead of 68+ with redundancy
 5. **Cloud-ready** — unlike `~/.cursor/skills/`, repo skills work in [Cursor Cloud Agents](https://cursor.com/docs/cloud-agent)
 
 ---
@@ -110,7 +110,7 @@ You open this repo in Cursor
 
 | Spec | Value |
 |------|-------|
-| Pre-installed skills | **47** |
+| Pre-installed skills | **55** |
 | Optional catalog skills | **5** (install on demand) |
 | Project rules | **2** (`.mdc` files) |
 | Skill format | Universal `SKILL.md` with YAML frontmatter (`name`, `description`) |
@@ -138,7 +138,7 @@ cursor-config-business/
 │   │   ├── no-code-default.mdc      alwaysApply: true
 │   │   └── skill-routing.mdc          Contextual skill → task mapping
 │   │
-│   └── skills/                        47 skill folders, each with SKILL.md
+│   └── skills/                        55 skill folders, each with SKILL.md
 │       ├── lead-research-assistant/
 │       ├── ideal-customer-profile/
 │       ├── create-prd/
@@ -148,14 +148,16 @@ cursor-config-business/
 ├── docs/
 │   ├── COPYWRITING.md
 │   ├── FIRST_PRINCIPLES.md
-│   └── BUSINESS_MODELS.md
+│   ├── BUSINESS_MODELS.md
+│   └── PITCH_SKILL_LIBRARY.md
 │
 ├── outputs/                           Deliverables (contents gitignored)
 │   └── .gitkeep
 │
 └── scripts/
     ├── new-initiative.ps1             Fork this config for a new initiative
-    └── install-optional-skill.ps1     Install catalog skills into .cursor/skills/
+    ├── install-optional-skill.ps1     Install catalog skills into .cursor/skills/
+    └── verify_pitch_skills.sh         Structural smoke check for pitch SKILL.md files
 ```
 
 ---
@@ -171,6 +173,21 @@ Full categorized list lives in [skills-manifest.json](skills-manifest.json). Sum
 | `direct-response-copy-engine` | Generate/audit direct-response ad copy |
 
 [docs/COPYWRITING.md](docs/COPYWRITING.md)
+
+### Pitch / VC / hackathon (8)
+
+| Skill | Purpose |
+|-------|--------|
+| `pitch-workflow-router` | Route to the right pitch skill (no long auto-chains) |
+| `venture-thesis-builder` | Venture-scale thesis: wedge, path, why-now, earned secret, evidence |
+| `vc-investor-narrative` | VC lens, objection prep |
+| `pitch-deck-architect` | Emailed vs live deck structure (outline only) |
+| `pitch-copy-and-slides` | Headlines, bullets, talk cues |
+| `live-pitch-script` | Demo Day / live meeting talk track |
+| `vc-pitch-review` | Skeptical investor read |
+| `hackathon-pitch-demo` | MLH / Devpost / rubric-first hackathon demo |
+
+[docs/PITCH_SKILL_LIBRARY.md](docs/PITCH_SKILL_LIBRARY.md)
 
 ### Custom research (4)
 
@@ -289,7 +306,7 @@ git remote add origin https://github.com/YOUR_USER/your-initiative-repo.git
 git push -u origin main
 ```
 
-Open the initiative folder in Cursor — it inherits all 47 skills and rules.
+Open the initiative folder in Cursor — it inherits all 55 skills and rules.
 
 ---
 
@@ -326,7 +343,7 @@ Use graphify on the docs/ folder to map our competitive landscape documents.
 
 ### Method 5: Install optional catalog skills
 
-Best for: LinkedIn content, deeper competitive intel, founder-led GTM — without bloating the default 47.
+Best for: LinkedIn content, deeper competitive intel, founder-led GTM — without bloating the default 55.
 
 ```powershell
 .\scripts\install-optional-skill.ps1 -Name linkedin-content
@@ -566,7 +583,7 @@ cursor .
 
 ## Curating philosophy
 
-This repo contains **47 skills**: a curated subset of the **68-skill** [pm-skills marketplace](https://github.com/phuryn/pm-skills), plus custom research, copy, first-principles, and business-model skills.
+This repo contains **55 skills**: a curated subset of the **68-skill** [pm-skills marketplace](https://github.com/phuryn/pm-skills), plus custom research, copy, first-principles, business-model, and pitch/VC skills.
 
 ### Included because
 

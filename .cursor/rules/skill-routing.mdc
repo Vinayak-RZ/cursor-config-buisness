@@ -5,7 +5,7 @@ alwaysApply: false
 
 # Business skill routing
 
-Curated set only (~47 skills). Full list: [skills-manifest.json](../../skills-manifest.json).
+Curated set only (~55 skills). Full list: [skills-manifest.json](../../skills-manifest.json).
 
 | User intent | Skill |
 |-------------|-------|
@@ -29,5 +29,6 @@ Curated set only (~47 skills). Full list: [skills-manifest.json](../../skills-ma
 | Audit ad copy / pressure-test draft | `direct-response-copy-engine` (Audit mode) |
 | Short-form video script / carousel ad copy | `direct-response-copy-engine` |
 | Map knowledge from docs/files | `graphify` |
+| Pitch / VC / Demo Day / hackathon | `pitch-workflow-router` (route first), `venture-thesis-builder`, `vc-investor-narrative`, `pitch-deck-architect`, `pitch-copy-and-slides`, `live-pitch-script`, `vc-pitch-review`, `hackathon-pitch-demo` — see [docs/PITCH_SKILL_LIBRARY.md](../../docs/PITCH_SKILL_LIBRARY.md) |
 
 Optional skills (not pre-installed): run `scripts/install-optional-skill.ps1 -Name linkedin-content` etc.

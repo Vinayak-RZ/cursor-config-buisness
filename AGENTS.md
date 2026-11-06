@@ -28,6 +28,21 @@ This repo is designed to be cloned or forked. Skills in `.cursor/skills/` are co
 
 Guide: [docs/COPYWRITING.md](docs/COPYWRITING.md)
 
+## Pitch / VC / hackathon
+
+| Skill | Use |
+|-------|-----|
+| `pitch-workflow-router` | Pick the right pitch skill without long auto-chains |
+| `venture-thesis-builder` | Wedge, venture-scale path, why-now, earned secret, evidence map |
+| `vc-investor-narrative` | VC lens, objections, meeting prep |
+| `pitch-deck-architect` | Emailed vs live deck structure (Markdown only) |
+| `pitch-copy-and-slides` | Slide headlines and talk cues (founder voice) |
+| `live-pitch-script` | Demo Day / live meeting talk track |
+| `vc-pitch-review` | Skeptical investor-style read |
+| `hackathon-pitch-demo` | Rubric-aligned demo (MLH / Devpost / event-specific) |
+
+Guide: [docs/PITCH_SKILL_LIBRARY.md](docs/PITCH_SKILL_LIBRARY.md)
+
 ## Thinking and business models
 
 | Skill | Use |
